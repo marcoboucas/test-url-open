@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test app</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Test app</title>
+    </head>
 
-<body>
-    <div>
-        <h1>Test app</h1>
-        <button onclick="goBackToApp()">Go Back to app</button>
-        <a
-            href="https://chronopost--pocilluin.lightning.force.com/lightning/r/Account/0012z00000D1aY0AAJ/view?marcoTest=1234&c__marcoTest=234">Go
-            to
-            account</a>
-    </div>
-    <script>
+    <body>
+        <div>
+            <h1>Test app</h1>
+            <button onclick="goBackToApp()">Go Back to app</button>
+            <a href="salesforce1://main">Main</a>
+            <a href="salesforce1://sObject/0012z00000D1aY0AAJ/view">Go to account</a>
+            <a
+                href="https://chronopost--pocilluin.lightning.force.com/lightning/r/Account/0012z00000D1aY0AAJ/view?marcoTest=1234&c__marcoTest=234">Go
+                to
+                account</a>
+        </div>
+        <script>
 
-        // close the current window to go back to the app
-        function goBackToApp() {
-            window.close();
-        }
-    </script>
-</body>
+            // close the current window to go back to the app
+            function goBackToApp() {
+                window.close();
+            }
+        </script>
+    </body>
 
 </html>
