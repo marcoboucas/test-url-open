@@ -16,6 +16,7 @@
         <button onclick="window.open('salesforce1://')">Main</button>
         <button onclick="window.history.back()">Back</button>
         <button onclick="window.close()">close</button>
+        <button onclick="goBackToApp()">Change location</button>
         <a href="salesforce1://sObject/0012z00000D1aY0AAJ/view">Go to account</a>
         <a
             href="https://chronopost--pocilluin.lightning.force.com/lightning/r/Account/0012z00000D1aY0AAJ/view?marcoTest=1234&c__marcoTest=234">Go
@@ -26,7 +27,7 @@
 
         // close the current window to go back to the app
         function goBackToApp() {
-            window.close();
+            window.location.href = 'salesforce1://';
         }
     </script>
 </body>
